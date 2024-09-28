@@ -1,0 +1,320 @@
+/* Main Stylesheet */
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Navbar Links */
+.navbar ul {
+    list-style: none;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background: #fff;
+}
+
+.navbar ul.open {
+    display: block;
+}
+
+/* Header Section */
+.header {
+    background: url('../img/intro-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 800px;
+}
+
+.header-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.header-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Learn More Button */
+.header-content .btn {
+    padding: 12px 25px; /* Adjusted padding for better button size */
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #fff; /* Add visible white border */
+    border-radius: 5px; /* Slight border radius for rounded corners */
+    transition: background 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+    margin-top: -10px;
+    margin-bottom: 50px; /* Increased margin to create more space below the button */
+}
+
+.header-content .btn:hover {
+    background: #fff; /* Background becomes white */
+    color: #00bcd4; /* Text color changes to match the theme */
+    border-color: #00bcd4; /* Border changes to match the text color */
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.section hr {
+    width: 50px;
+    height: 3px;
+    background: #00bcd4;
+    margin: 20px auto;
+    border: none;
+}
+
+.section p,
+.section ol {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+ol.number {
+    list-style: decimal inside;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Aligning and Centering */
+.text-center {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0097a7;
+}
+
+/* Return to Top Button */
+.return-to-top {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.return-to-top a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333; /* Button background color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #00bcd4; /* Themed border color */
+    transition: background 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.return-to-top a:hover {
+    background: #00bcd4; /* Themed color background */
+    color: #fff; /* White text */
+    border-color: #0097a7; /* Darker themed border on hover */
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.assembled-by {
+    font-size: 14px;
+}
+
+.assembled-by a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.assembled-by a:hover {
+    color: #0097a7;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .assembled-by {
+        margin-top: 10px;
+    }
+}
+
+/* Responsive Design for Navigation */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header-content h2 {
+        font-size: 24px;
+    }
+
+    .header-content h3 {
+        font-size: 18px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+}
+
+/* Adjust logo in mobile view */
+@media (max-width: 768px) {
+    .header {
+        padding-top: 60px; /* Adjust padding to prevent the logo from being under the navbar */
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
